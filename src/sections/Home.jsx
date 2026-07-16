@@ -319,7 +319,7 @@ const Home = () => {
           "
         />
 
-        {/* Rotating Ring */}
+        {/* Rotating Ring
 
         <motion.div
           animate={{
@@ -343,7 +343,7 @@ const Home = () => {
           border-dashed
           border-[#00FFC8]/30
           "
-        />
+        /> */}
 
         {/* Avatar */}
 
