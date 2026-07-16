@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #071018;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(-45deg, #071018, #0b1f2e, #102d3f);
+}
+
+canvas {
+  display: block;
+}
+
+@keyframes marquee {
+
+0%{
+ transform: translateX(0);
+}
+
+100%{
+ transform: translateX(-50%);
+}
+
+}
+
+
+.animate-marquee{
+
+animation: marquee 20s linear infinite;
+
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
