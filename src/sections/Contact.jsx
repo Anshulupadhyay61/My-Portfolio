@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, User, Briefcase, Send } from "lucide-react";
-import astronaut from "../assets/astra.png";
+import astronaut from "../assets/Astra.png";
 import emailjs from "@emailjs/browser";
 // import { useRef } from "react";
 import { useRef, useState } from "react";
