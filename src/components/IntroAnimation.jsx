@@ -14,7 +14,9 @@ export default function IntroAnimation({ onFinish }) {
     "안녕하세요",
     "مرحبا",
     "Hallo",
-    "Salam"
+    "Salam",
+    "Ram Ram",
+    "चरण स्पर्श"
   ];
 
   const [index, setIndex] = useState(0);
