@@ -18,6 +18,8 @@ import Footer from "./sections/Footer";
 
 export default function App() {
 
+  
+
   const [loading, setLoading] = useState(true);
 
 
