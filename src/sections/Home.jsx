@@ -96,7 +96,7 @@ const Home = () => {
         >
 
           <span className="text-[#00FFC8] font-semibold">
-            ✦ ✦ MY ROLES
+            ✦ MY ROLES
           </span>
 
           <AnimatePresence mode="wait">
