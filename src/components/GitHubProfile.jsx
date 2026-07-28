@@ -48,11 +48,11 @@ export default function GitHubProfile() {
 
       {/* Content */}
 
-      <div className="relative p-10 grid lg:grid-cols-2 gap-10 items-center">
+<div className="relative p-6 sm:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
         {/* LEFT */}
 
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 text-center sm:text-left">
 
           <motion.img
 
@@ -65,25 +65,25 @@ export default function GitHubProfile() {
 
             alt="avatar"
 
-            className="h-40 w-40 rounded-full border-4 border-cyan-400 object-cover shadow-[0_0_40px_rgba(0,255,255,.35)]"
+           className="h-32 w-32 sm:h-40 sm:w-40 rounded-full border-4 border-cyan-400 object-cover shadow-[0_0_40px_rgba(0,255,255,.35)] shrink-0"
 
           />
 
           <div>
 
-            <h1 className="text-4xl font-black">
+            <h1 className="text-3xl sm:text-4xl font-black break-words">
 
               {user.name}
 
             </h1>
 
-            <p className="mt-2 text-cyan-400">
+            <p className="mt-2 text-cyan-400 break-all">
 
               @{user.login}
 
             </p>
 
-            <p className="mt-5 text-gray-400 leading-8">
+            <p className="mt-5 text-gray-400 leading-7 text-sm sm:text-base">
 
               {user.bio}
 
@@ -101,7 +101,7 @@ export default function GitHubProfile() {
 
               rel="noreferrer"
 
-              className="mt-8 inline-flex items-center gap-3 rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-black"
+             className="mt-8 inline-flex w-full sm:w-auto justify-center items-center gap-3 rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-black"
 
             >
 
@@ -119,7 +119,7 @@ export default function GitHubProfile() {
 
         {/* RIGHT */}
 
-        <div className="grid gap-5">
+        <div className="grid gap-5 w-full">
 
           <Info
             icon={<FaMapMarkerAlt/>}
@@ -161,11 +161,11 @@ function Info({ icon, label, value }) {
         x:8
       }}
 
-      className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl"
+      className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5 backdrop-blur-xl"
 
     >
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 min-w-0">
 
         <div className="text-cyan-400 text-2xl">
 
@@ -181,7 +181,7 @@ function Info({ icon, label, value }) {
 
           </p>
 
-          <h3 className="font-semibold">
+          <h3 className="font-semibold break-words">
 
             {value}
 
