@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
+
 export default function GitHubCard() {
     return (
         <motion.div
@@ -34,11 +35,13 @@ export default function GitHubCard() {
                     </a>
                 </div>
 
-                <img
-                    src="https://ghchart.rshah.org/2563eb/Anshulupadhyay61"
-                    alt="GitHub Contributions"
-                    className="w-full rounded-xl"
-                />
+                <div className="overflow-x-auto pt-2 pb-3">
+  <img
+    src="https://ghchart.rshah.org/2563eb/Anshulupadhyay61"
+    alt="GitHub Contributions"
+    className="min-w-[900px] rounded-xl mb-4"
+  />
+</div>
             </div>
         </motion.div>
     );
