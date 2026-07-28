@@ -14,6 +14,7 @@ import Experience from "./sections/Experience";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import Dashboard from "./sections/Dashboard";
 
 
 export default function App() {
@@ -78,6 +79,8 @@ export default function App() {
 
 
             <Project />
+
+            <Dashboard />
 
 
             <Experience />

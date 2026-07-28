@@ -50,11 +50,28 @@ items-center
 
                 {/* Left Side */}
 
-                <div className="flex justify-center">
+                <div
+                    className="flex justify-center"
+                    style={{ perspective: "1500px" }}
+                >
                     <motion.div
-                        initial={{ opacity: 0, x: -60 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
+                        initial={{ opacity: 0, x: -60, rotateY: -25 }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0,
+                            rotateY: 0,
+                        }}
+                        whileHover={{
+                            rotateY: 12,
+                            rotateX: 6,
+                            scale: 1.04,
+                        }}
+                        transition={{
+                            duration: 0.8,
+                        }}
+                        style={{
+                            transformStyle: "preserve-3d",
+                        }}
                         className="relative flex items-center justify-center"
                     >
                         {/* Green Glow */}
@@ -75,9 +92,26 @@ items-center
                             className="absolute w-[240px] h-[240px] sm:w-[290px] sm:h-[290px] lg:w-[350px] lg:h-[350px] rounded-full border border-cyan-400/20 border-dashed"
                         />
 
+                        <div
+                            className="
+absolute
+w-[380px]
+h-[380px]
+rounded-full
+border
+border-cyan-400/20
+blur-sm
+"
+                        />
+
                         {/* Image */}
 
-                        <div className="
+                        <div
+                            style={{
+                                transform: "translateZ(60px)",
+                                transformStyle: "preserve-3d",
+                            }}
+                            className="
 relative
 w-[240px]
 h-[240px]
@@ -87,10 +121,15 @@ lg:w-[360px]
 lg:h-[360px]
 rounded-full
 overflow-hidden
-border-4
-border-cyan-400/40
-shadow-[0_0_60px_rgba(34,211,238,.6)]
-">
+border-[5px]
+border-cyan-300/50
+bg-black/20
+backdrop-blur-md
+shadow-[0_40px_120px_rgba(34,211,238,.45)]
+ring-4
+ring-cyan-400/10
+"
+                        >
 
                             <motion.img
                                 src={profile}
@@ -106,6 +145,8 @@ shadow-[0_0_60px_rgba(34,211,238,.6)]
                         </div>
                     </motion.div>
                 </div>
+
+                
 
                 {/* Right */}
 

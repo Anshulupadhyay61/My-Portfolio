@@ -50,3 +50,15 @@ animation: marquee 20s linear infinite;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.react-github-calendar {
+  width: 100%;
+}
+
+.react-github-calendar text {
+  fill: #9ca3af;
+}
+
+.react-github-calendar rect {
+  rx: 3px;
+}
